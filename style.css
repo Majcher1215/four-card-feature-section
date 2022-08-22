@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /* Neutral Colors */
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--veryLightGray);
+}
+
+p {
+    color: var(--grayishBlue);
+}
+
+.offer {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 5em 0;
+}
+
+.description {
+    margin-bottom: 5em;
+}
+
+.description h1{
+    color: var(--veryDarkBlue);
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+
+.description h1 span {
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+
+
+.offer-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    margin-bottom: 2em;
+    text-align: start;
+    padding-top: 0.5em;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 0px 10px 33px -5px rgba(148, 153, 182, 1);
+    -moz-box-shadow: 0px 10px 33px -5px rgba(148, 153, 182, 1);
+    box-shadow: 0px 10px 33px -5px rgba(148, 153, 182, 1);
+}
+
+#supervisor {
+    border-top: 0.35em solid var(--cyan);
+}
+
+#team-builder {
+    border-top: 0.35em solid var(--red);
+}
+
+#karma {
+    border-top: 0.35em solid var(--orange);
+}
+
+#calculator {
+    border-top: 0.35em solid var(--blue);
+}
+
+.offer-item > * {
+    width: 80%;
+}
+
+.offer-item h2 {
+    color: var(--veryDarkBlue);
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+}
+
+.offer-item p {
+    font-size: 0.9em;
+}
+
+.offer-item img {
+    width: 20%;
+    align-self: flex-end;
+    margin: 2em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
