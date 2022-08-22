@@ -110,5 +110,50 @@ p {
     margin: 2em;
 }
 
+@media (min-width: 1201px) {
+    .offer {
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        text-align: center;
+        margin: 5em 0;
+    }
+
+    .description {
+        grid-column: 1 / 4;
+        margin: 0 17.5em;
+        font-size: 1.25em;
+    }
+
+    .description p {
+        font-size: 0.8em;
+    }
+
+    .offer-item {
+        margin-bottom: 0;
+    }
+
+    #supervisor {
+        position: relative;
+        top: 10em;
+    }
+
+    #team-builder {
+        margin-bottom: 0;
+    }
+
+    #karma {
+        grid-column: 2;
+    }
+
+    #calculator {
+        grid-column: 3;
+        grid-row: 2;
+        position: relative;
+        top: 10em;        
+    }
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
